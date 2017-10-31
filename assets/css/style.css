@@ -1,0 +1,106 @@
+html body {
+    background-image: url(../images/wild_oliva.png);
+}
+
+p, h2, h3 {
+    color: white;
+    line-height: 150%;
+}
+
+p {
+    font-size: 18px;
+}
+
+.navbar {
+    background: #ffffff69;
+    border: none;
+}
+.navbar-default .navbar-brand {
+    color: white;
+    font-size: 30px;
+    padding-left: 80px;
+}
+
+#cont1 {
+    background: #ffffff69;
+    padding: 2%;
+    margin: 5% 2.5% 5% 5%;
+    width: 60%;
+}
+
+#cont2 {
+    width: 25%;
+    text-align: center;
+    background: #ffffff69;
+    padding: 2%;
+    margin: 5% 5% 5% 2.5%;
+}
+
+#Yogi {
+    float: left;
+    margin-right: 20px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+.footer {
+    background: #ffffff69;
+    text-align: center;}
+
+#name, #email, #message {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type="submit"]:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+input[type="submit"] {
+    background-color: #63c8ed;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+@media only screen and (max-width: 640px) {
+    #cont1 {
+        width: auto;
+        margin: 5% 2.5% 5% 2.5%
+    }
+    #cont2 {
+        width: auto;
+        margin: 5% 2.5% 5% 2.5%
+    }
+
+    #Yogi {
+        float: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #cont1 {
+        width: auto;
+        margin: 5% 2.5% 5% 2.5%;
+    }
+    #cont2 {
+        width: auto;
+        margin: 5% 2.5% 5% 2.5%;
+    }
+}
