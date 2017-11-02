@@ -6,6 +6,10 @@ p, h2, h3 {
     color: white;
     line-height: 150%;
 }
+h2, h3 {
+    border-bottom: 5px solid grey;
+    padding-bottom: 2%;
+}
 
 p {
     font-size: 18px;
@@ -14,26 +18,24 @@ p {
 .navbar {
     background: #ffffff69;
     border: none;
+    border-bottom: 3px solid black;
 }
 .navbar-default .navbar-brand {
     color: white;
     font-size: 30px;
-    padding-left: 80px;
+    background: #ffffff40;
 }
 
-#cont1 {
+.panel-default { 
     background: #ffffff69;
-    padding: 2%;
-    margin: 5% 2.5% 5% 5%;
-    width: 60%;
-}
+    border: none;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    }
 
-#cont2 {
-    width: 25%;
+.cont2 {
     text-align: center;
-    background: #ffffff69;
-    padding: 2%;
-    margin: 5% 5% 5% 2.5%;
+    margin-top: 1.8%;
 }
 
 #Yogi {
@@ -41,13 +43,44 @@ p {
     margin-right: 20px;
 }
 
-.img-fluid {
+.img-responsive {
     max-width: 100%;
     height: auto;
 }
+
+.col-xs-6 {
+    position: relative;
+}
+
+.portfolio-link {
+    position: absolute;
+    top: 10px;
+    z-index: 1;
+    background: #ffffff69;
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    height: 50px;
+    width: 90.3%;
+    text-align: center;
+    padding: 3%;
+    font-family: cursive;
+}
+
+.portfolio-link:hover {
+    color:#63c8ed;
+    text-decoration: none;
+}
+
+/*.mini-box {
+    width: 50%;
+}
+*/
 .footer {
     background: #ffffff69;
-    text-align: center;}
+    text-align: center;
+    border-top: 3px solid black;
+}
 
 #name, #email, #message {
     width: 100%;
@@ -79,28 +112,38 @@ input[type="submit"] {
     transition-duration: 0.4s;
 }
 
-@media only screen and (max-width: 640px) {
-    #cont1 {
+/*@media only screen and (max-width: 980px) {*/
+/*    .col-xs-6 {
         width: auto;
-        margin: 5% 2.5% 5% 2.5%
-    }
-    #cont2 {
-        width: auto;
-        margin: 5% 2.5% 5% 2.5%
-    }
-
-    #Yogi {
+        margin-left: 35px;
+    }*/
+  /*  #Yogi {
         float: none;
     }
-}
+    .portfolio-link {
+        width: 92.6%;
+    }
+    .img-responsive {
+        margin: 0 0 5% 0;
+    }*/
+  /*  .top.col-xs-6 {
+        margin-top: -5%;
+    }
+}*/
 
 @media only screen and (max-width: 768px) {
-    #cont1 {
-        width: auto;
-        margin: 5% 2.5% 5% 2.5%;
+    .col-sm-8 {
+        width: 100%;
     }
-    #cont2 {
-        width: auto;
-        margin: 5% 2.5% 5% 2.5%;
+    .col-sm-4 {
+        width: 100%;
     }
 }
+
+@media only screen and (max-width: 640px) {
+    #Yogi {
+        width: 100%;
+        margin-bottom: 4%;
+    }
+}
+
