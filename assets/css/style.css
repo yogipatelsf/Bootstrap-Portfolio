@@ -46,6 +46,7 @@ p {
 .img-responsive {
     max-width: 100%;
     height: auto;
+    padding: 3%;
 }
 
 .col-xs-6 {
@@ -56,7 +57,6 @@ p {
     position: absolute;
     top: 10px;
     z-index: 1;
-    background: #ffffff69;
     text-decoration: none;
     font-size: 24px;
     color: white;
@@ -65,6 +65,11 @@ p {
     text-align: center;
     padding: 3%;
     font-family: cursive;
+}
+
+.img-responsive:hover {
+   box-shadow: 0 1px 8px black;
+
 }
 
 .portfolio-link:hover {
@@ -79,9 +84,12 @@ p {
 .footer {
     background: #ffffff69;
     text-align: center;
-    color: black;
     border-top: 3px solid black;
     height: 50px;
+    padding-top: 8px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 #name, #email, #message {
@@ -114,33 +122,23 @@ input[type="submit"] {
     transition-duration: 0.4s;
 }
 
-/*@media only screen and (max-width: 980px) {*/
-/*    .col-xs-6 {
-        width: auto;
-        margin-left: 35px;
-    }*/
-  /*  #Yogi {
-        float: none;
+/*@media only screen and (max-width: 980px) {
+    .col-md-8 {
+        width: 65%;
     }
-    .portfolio-link {
-        width: 92.6%;
-    }
-    .img-responsive {
-        margin: 0 0 5% 0;
-    }*/
-  /*  .top.col-xs-6 {
-        margin-top: -5%;
+    .cont2 {
+        width: 35%;
     }
 }*/
 
 @media only screen and (max-width: 768px) {
-    .col-sm-8 {
+/*    .col-sm-8 {
         width: 100%;
     }
     .col-sm-4 {
         width: 100%;
     }
-}
+}*/
 
 @media only screen and (max-width: 640px) {
     #Yogi {
@@ -149,6 +147,19 @@ input[type="submit"] {
     }
     .navbar-toggle {
         background-color: white;
+    }
+    .footer {
+        position: inherit;
+    }
+    .cont2 {
+        margin-bottom: 100px;
+    }
+    .img-responsive {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .portfolio-link {
+        font-size: 50px;
     }
 }
 
