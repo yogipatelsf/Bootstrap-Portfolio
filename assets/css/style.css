@@ -79,7 +79,9 @@ p {
 .footer {
     background: #ffffff69;
     text-align: center;
+    color: black;
     border-top: 3px solid black;
+    height: 50px;
 }
 
 #name, #email, #message {
@@ -144,6 +146,9 @@ input[type="submit"] {
     #Yogi {
         width: 100%;
         margin-bottom: 4%;
+    }
+    .navbar-toggle {
+        background-color: white;
     }
 }
 
