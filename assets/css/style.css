@@ -5,6 +5,8 @@ html body {
 p, h2, h3 {
     color: white;
     line-height: 150%;
+    animation-duration: 4s;
+    animation-name: zoomIn;
 }
 h2, h3 {
     border-bottom: 5px solid grey;
@@ -24,6 +26,21 @@ p {
     color: white;
     font-size: 30px;
     background: #ffffff40;
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  animation-name: zoomIn;
 }
 
 .panel-default { 
@@ -47,6 +64,8 @@ p {
     max-width: 100%;
     height: auto;
     padding: 3%;
+    animation-duration: 4s;
+    animation-name: zoomIn;
 }
 
 .col-xs-6 {
