@@ -28,6 +28,18 @@ p {
     background: #ffffff40;
 }
 
+.active1:hover{
+   background-color:#e7e7e7;
+}
+
+.active2:hover{
+   background-color:#e7e7e7;
+}
+
+.active3:hover{
+   background-color:#e7e7e7;
+}
+
 @keyframes zoomIn {
   from {
     opacity: 0;
